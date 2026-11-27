@@ -9,10 +9,14 @@ public class BankSolid {
         BerBunga[] berbunga = { ani, citra, dewi };
         BisaDitarik[] bisaDitarik = { ani, citra, budi };
 
-        // Ketentuan 6: BisaDitarik[] salah = { ani, dewi };
-        // Pesan error: (isi dengan pesan asli dari compiler-mu)
+        // ketentuan 6: BisaDitarik[] salah = { ani, dewi };
+        // Pesan errornya: java: incompatible types: Deposito cannot be converted to BisaDitarik
 
-        ProsesAkhirBulan proses = new ProsesAkhirBulan();
+
+
+        Notifikasi notifikasi = new EmailNotifikasi();
+
+        ProsesAkhirBulan proses = new ProsesAkhirBulan(notifikasi);
         LaporanBank laporan = new LaporanBank();
 
         laporan.cetakDaftar("========== REKENING AWAL ==========", semua);
