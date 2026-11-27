@@ -12,7 +12,8 @@ public class BankSolid {
         // ketentuan 6: BisaDitarik[] salah = { ani, dewi };
         // Pesan errornya: java: incompatible types: Deposito cannot be converted to BisaDitarik
 
-
+        // Ketentuan 7: ganti ke new SmsNotifikasi() cukup mengubah 1 baris.
+        // ProsesAkhirBulan tidak perlu diubah sama sekali.
 
         Notifikasi notifikasi = new EmailNotifikasi();
 
